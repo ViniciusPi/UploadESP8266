@@ -17,6 +17,7 @@ class _EspTesteState extends State<EspTeste> {
   @override
   Widget build(BuildContext context) {
     return FluentApp(
+      debugShowCheckedModeBanner: false,
       color: Colors.yellow,
       home: homepage(),
     );
@@ -56,8 +57,8 @@ class _homepageState extends State<homepage> {
       ),
       content: NavigationBody(
         children: [
-          PrimeiraView(),
           SegundaView(),
+          PrimeiraView(),
         ],
         index: index,
       ),
